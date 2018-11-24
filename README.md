@@ -7,10 +7,19 @@ Maven makes Java easier, and Java is easy.  *Rolls eyes*
 ### Mac OS X
 
 ```bash
-$ brew install maven
-$ unset M2_HOME
-$ mvn compile
-$ mvn package
+brew install maven
+unset M2_HOME
+mvn compile
+mvn package
+```
+
+### Ubuntu
+
+```bash
+sudo apt-get install -y openjdk-9-jre-headless maven
+export JAVA_HOME=/usr/lib/jvm/java-1.9.0-openjdk-amd64
+mvn compile
+mvn package
 ```
 
 ## Running
